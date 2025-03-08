@@ -1,109 +1,50 @@
-# SuperMoc Nexus - Struktura Obrazów
+# UltraPower - Sklep zaawansowanych technologii
 
-## Struktura katalogów
-```
-assets/
-└── images/
-    ├── products/      # Zdjęcia produktów
-    ├── categories/    # Zdjęcia kategorii
-    └── banners/       # Bannery i elementy główne
-```
+UltraPower to sklep oferujący zaawansowane moduły i systemy technologiczne, które wspomagają i poprawiają ludzkie możliwości. Nasz asortyment obejmuje m.in. systemy Bio-Regeneracji, Chronos Mentis, Levitas Aether, Velocitas Prime oraz wiele innych innowacyjnych rozwiązań.
 
-## 1. Zdjęcia Produktów (assets/images/products/)
+## Opis sklepu
+Sklep UltraPower oferuje:
+- Zaawansowane urządzenia i systemy takie jak Bio-Regeneracja, Chronos Mentis oraz inne, które zwiększają i optymalizują funkcje organizmu.
+- Szeroki wybór specyfikacji, m.in. modele systemów (Standard, Advanced, Elite), różne tryby regeneracji oraz systemy kontroli (Automatyczny, Neuralny, Hybrydowy).
+- Intuicyjny interfejs użytkownika zapewniający łatwość nawigacji oraz nowoczesną prezentację produktów.
 
-### Generator Energii Psi
-- chronos-mentis-elite-main.jpg     # Główne zdjęcie
-- chronos-mentis-elite-1.jpg        # Miniatura 1
-- chronos-mentis-elite-2.jpg        # Miniatura 2
-- chronos-mentis-elite-3.jpg        # Miniatura 3
+## Informacje ze dokumentacji
+Sklep wykorzystuje następujące wytyczne:
+- Strony produktów zawierają nazwę, cenę, krótki opis, pełny opis produktu oraz cechy/atrybuty.
+- Strony koszyka wyświetlają produkty z nazwą, ceną, wybranymi modelami/atrybutami oraz ilością, z sumą częściową, kosztami dostawy oraz kwotą końcową.
+- Produkty są opisane w ramach zaawansowanych urządzeń i systemów, mających na celu zwiększanie i optymalizację funkcji organizmu.
 
-### Moduły Przyspieszenia
-- velocitas-prime-main.jpg          # Główne zdjęcie
-- velocitas-prime-1.jpg             # Miniatura 1
-- velocitas-prime-2.jpg             # Miniatura 2
-- velocitas-prime-3.jpg             # Miniatura 3
+## Technologie i narzędzia
+Projekt UltraPower wykorzystuje:
+- **HTML** – struktura stron.
+- **CSS** – stylowanie i wygląd interfejsu.
+- **JavaScript** – logika biznesowa i interaktywność.
+- **three.js** – renderowanie grafiki 3D.
+- **particles.js** – efekty cząsteczkowe.
+- **Parcel-bundler** – narzędzie do szybkiego bundlingu aplikacji.
+- **npm** – menadżer pakietów; informacje o zależnościach i skryptach znajdują się w plikach `package.json` oraz `package-lock.json`.
 
-### Zestawy Inklinacji
-- levitas-aether-main.jpg           # Główne zdjęcie
-- levitas-aether-1.jpg              # Miniatura 1
-- levitas-aether-2.jpg              # Miniatura 2
-- levitas-aether-3.jpg              # Miniatura 3
+## Uruchomienie projektu
+Aby rozpocząć pracę z projektem:
+1. Zainstaluj zależności:
+   ```
+   npm install
+   ```
+2. Uruchom serwer deweloperski:
+   ```
+   npm run dev
+   ```
+Po uruchomieniu serwera deweloperskiego, otwórz przeglądarkę i przejdź do odpowiedniego adresu, podanego w logach serwera.
 
-### Bio-Regeneracja
-- vitalis-phoenix-main.jpg          # Główne zdjęcie
-- vitalis-phoenix-1.jpg             # Miniatura 1
-- vitalis-phoenix-2.jpg             # Miniatura 2
-- vitalis-phoenix-3.jpg             # Miniatura 3
+## Struktura projektu
+Projekt jest podzielony na następujące moduły:
+- **assets/** – zasoby takie jak skrypty, style i obrazy.
+- **src/** – główny kod aplikacji.
+- **products/** – strony produktowe.
+- **cart/** – strona koszyka.
 
-## 2. Zdjęcia Kategorii (assets/images/categories/)
+## Dodatkowe informacje
+Projekt został stworzony z myślą o zapewnieniu nowoczesnych, interaktywnych rozwiązań w branży technologicznej. Zachęcamy do eksploracji oraz zgłaszania sugestii i błędów.
 
-- category-psi.jpg                  # Generator Energii Psi
-- category-speed.jpg                # Moduły Przyspieszenia
-- category-gravity.jpg              # Zestawy Inklinacji
-- category-bio.jpg                  # Systemy Bio-Regeneracji
-
-## 3. Bannery (assets/images/banners/)
-
-- hero-banner.jpg                   # Banner główny strony
-- logo.png                          # Logo SuperMoc Nexus
-
-## Zastosowanie w kodzie HTML
-
-### Na stronie głównej:
-```html
-<!-- Logo -->
-<img src="assets/images/banners/logo.png" alt="SuperMoc Nexus Logo">
-
-<!-- Banner główny -->
-<img src="assets/images/banners/hero-banner.jpg" alt="SuperMoc Nexus - Odkryj Swoją Supermoc">
-
-<!-- Kategorie -->
-<img src="assets/images/categories/category-psi.jpg" alt="Generator Energii Psi">
-<img src="assets/images/categories/category-speed.jpg" alt="Moduły Przyspieszenia">
-<img src="assets/images/categories/category-gravity.jpg" alt="Zestawy Inklinacji">
-<img src="assets/images/categories/category-bio.jpg" alt="Systemy Bio-Regeneracji">
-
-<!-- Produkty -->
-<img src="assets/images/products/chronos-mentis-elite-main.jpg" alt="Chronos Mentis Elite">
-<img src="assets/images/products/velocitas-prime-main.jpg" alt="Velocitas Prime">
-<img src="assets/images/products/levitas-aether-main.jpg" alt="Levitas Aether">
-```
-
-### Na stronie produktu:
-```html
-<!-- Główne zdjęcie produktu -->
-<img src="../assets/images/products/chronos-mentis-elite-main.jpg" alt="Chronos Mentis Elite">
-
-<!-- Miniatury -->
-<img src="../assets/images/products/chronos-mentis-elite-1.jpg" alt="Chronos Mentis Elite - widok 1">
-<img src="../assets/images/products/chronos-mentis-elite-2.jpg" alt="Chronos Mentis Elite - widok 2">
-<img src="../assets/images/products/chronos-mentis-elite-3.jpg" alt="Chronos Mentis Elite - widok 3">
-```
-
-### Na stronie koszyka:
-```html
-<!-- Miniaturki produktów -->
-<img src="../assets/images/products/chronos-mentis-elite-main.jpg" alt="Chronos Mentis Elite" class="cart-thumbnail">
-```
-
-## Wymiary obrazów
-
-1. Produkty:
-   - Główne zdjęcie: 800x800px
-   - Miniatury: 200x200px
-
-2. Kategorie:
-   - Zdjęcia kategorii: 600x400px
-
-3. Bannery:
-   - Banner główny: 1920x600px
-   - Logo: 200x60px
-
-## Format i optymalizacja
-
-- Wszystkie zdjęcia produktów i kategorii: JPEG z kompresją 85%
-- Logo: PNG z przezroczystością
-- Maksymalny rozmiar pliku:
-  - Zdjęcia produktów: 300KB
-  - Bannery: 500KB
-  - Logo: 50KB
+---
+Projekt UltraPower - idealne połączenie innowacyjności i zaawansowanej technologii.
