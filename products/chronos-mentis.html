@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronos Mentis Elite - UltraPower</title>
+    <!-- Podłączenie czcionek z Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Podłączenie głównego CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <!-- Podłączenie CSS produktu -->
+    <link rel="stylesheet" href="../assets/css/product.css">
+</head>
+
+<body>
+    <!-- Nagłówek strony -->
+    <header class="main-header glass">
+        <div class="container">
+            <!-- Logo strony z linkiem do strony głównej -->
+            <div class="logo">
+                <a href="../index.html">UltraPower</a>
+            </div>
+            <!-- Nawigacja główna -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Strona Główna</a></li>
+                    <li><a href="product.html">Produkty</a></li>
+                    <!-- Link do koszyka z licznikiem -->
+                    <li>
+                        <a href="../cart/index.html" class="cart-link">
+                            Koszyk
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Główna treść strony -->
+    <main>
+        <div class="container">
+            <!-- Szczegóły produktu z ID -->
+            <div class="product-details" data-product-id="chronos-mentis">
+                <!-- Galeria produktu -->
+                <div class="product-gallery fade-in">
+                    <!-- Główny obraz produktu -->
+                    <div class="main-image glass">
+                        <div class="image-container product">
+                            <img src="../assets/images/products/chronos-mentis-main.jpg" alt="Chronos Mentis Elite">
+                        </div>
+                    </div>
+                    <!-- Miniatury produktu -->
+                    <div class="thumbnails">
+                        <!-- Miniatura - główny widok -->
+                        <div class="thumbnail active glass"
+                            data-image="../assets/images/products/chronos-mentis-main.jpg">
+                            <div class="image-container">
+                                <img src="../assets/images/products/chronos-mentis-main.jpg"
+                                    alt="Chronos Mentis Elite - Widok główny">
+                            </div>
+                        </div>
+                        <!-- Miniatura - detal 1 -->
+                        <div class="thumbnail glass" data-image="../assets/images/products/chronos-mentis-detail1.jpg">
+                            <div class="image-container">
+                                <img src="../assets/images/products/chronos-mentis-detail1.jpg"
+                                    alt="Chronos Mentis Elite - Interfejs neuronowy">
+                            </div>
+                        </div>
+                        <!-- Miniatura - detal 2 -->
+                        <div class="thumbnail glass" data-image="../assets/images/products/chronos-mentis-detail2.jpg">
+                            <div class="image-container">
+                                <img src="../assets/images/products/chronos-mentis-detail2.jpg"
+                                    alt="Chronos Mentis Elite - System kontroli">
+                            </div>
+                        </div>
+                        <!-- Miniatura - detal 3 -->
+                        <div class="thumbnail glass" data-image="../assets/images/products/chronos-mentis-detail3.jpg">
+                            <div class="image-container">
+                                <img src="../assets/images/products/chronos-mentis-detail3.jpg"
+                                    alt="Chronos Mentis Elite - Komponenty">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Informacje o produkcie -->
+                <div class="product-info glass fade-in">
+                    <!-- Nagłówek produktu -->
+                    <div class="product-header">
+                        <h1>Chronos Mentis Elite</h1>
+                        <span class="price">12 999 PLN</span>
+                    </div>
+
+                    <!-- Opis produktu -->
+                    <div class="product-description">
+                        <p>Chronos Mentis Elite to najnowocześniejszy interfejs psioniczny, który otwiera drzwi do
+                            nieograniczonych możliwości umysłu. Wykorzystując zaawansowaną technologię kwantowej
+                            synchronizacji neuronowej, pozwala na osiągnięcie niedostępnych dotąd poziomów świadomości i
+                            kontroli mentalnej.</p>
+
+                        <h3>Główne funkcje:</h3>
+                        <ul>
+                            <li>Kwantowa matryca synchronizacji neuronowej</li>
+                            <li>System wzmacniania sygnałów psionicznych</li>
+                            <li>Adaptacyjny interfejs bio-neuronowy</li>
+                            <li>Wielopoziomowy system ochrony mentalnej</li>
+                            <li>Procesor kwantowy do analizy wzorców myślowych</li>
+                            <li>Moduł synchronizacji temporalnej</li>
+                        </ul>
+
+                        <h3>Specyfikacja techniczna:</h3>
+                        <ul>
+                            <li>Zasięg telepatyczny: do 1000m</li>
+                            <li>Moc telekinetyczna: do 100kg</li>
+                            <li>Czas działania: 24h na jednym ładowaniu</li>
+                            <li>Częstotliwość odświeżania: 1000Hz</li>
+                            <li>Latencja systemu: < 0.5ms</li>
+                            <li>Kompatybilność: 99.9% populacji</li>
+                        </ul>
+
+                        <h3>Zaawansowane możliwości:</h3>
+                        <ul>
+                            <li>Telepatia dalekiego zasięgu</li>
+                            <li>Precyzyjna telekineza</li>
+                            <li>Projekcja astralna</li>
+                            <li>Synchronizacja z AI</li>
+                            <li>Wizualizacja kwantowa</li>
+                            <li>Transfer świadomości</li>
+                        </ul>
+                    </div>
+
+                    <!-- Atrybuty produktu - opcje wyboru -->
+                    <div class="product-attributes">
+                        <div class="attribute glass">
+                            <label>Poziom Synchronizacji</label>
+                            <select name="sync-level">
+                                <option value="basic">Podstawowy</option>
+                                <option value="advanced">Zaawansowany</option>
+                                <option value="elite" selected>Elite</option>
+                            </select>
+                        </div>
+
+                        <div class="attribute glass">
+                            <label>Moduł Neuralny</label>
+                            <select name="neural-module">
+                                <option value="standard">Standard</option>
+                                <option value="enhanced" selected>Wzmocniony</option>
+                                <option value="quantum">Kwantowy</option>
+                            </select>
+                        </div>
+
+                        <div class="attribute glass">
+                            <label>System Ochrony</label>
+                            <select name="protection">
+                                <option value="personal">Personalny</option>
+                                <option value="military" selected>Wojskowy</option>
+                                <option value="quantum">Kwantowy</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Akcje produktu - ilość i dodawanie do koszyka -->
+                    <div class="product-actions">
+                        <div class="quantity">
+                            <label>Ilość</label>
+                            <div class="quantity-controls glass">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" max="99">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+
+                        <button class="add-to-cart">Dodaj do koszyka</button>
+                    </div>
+
+                    <!-- Meta dane produktu - certyfikaty, dostawa, testowanie -->
+                    <div class="product-meta">
+                        <div class="meta-item glass">
+                            <span class="icon">🛡️</span>
+                            <span class="text">Certyfikat ISO-PSI Elite</span>
+                        </div>
+                        <div class="meta-item glass">
+                            <span class="icon">🚚</span>
+                            <span class="text">Dostawa w 24h</span>
+                        </div>
+                        <div class="meta-item glass">
+                            <span class="icon">↩️</span>
+                            <span class="text">30 dni na testowanie</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Stopka strony -->
+    <footer id="contact" class="main-footer glass">
+        <div class="container">
+            <!-- Dane kontaktowe w stopce -->
+            <div class="footer-contact">
+                <p>Email: <a href="mailto:kontakt@ultrapower.pl">kontakt@ultrapower.pl</a></p>
+                <p>Tel: +48 123 456 789</p>
+            </div>
+            <!-- Prawa autorskie -->
+            <p>© 2025 Kamil Tukendorf. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <!-- Podłączenie głównego pliku JavaScript jako modułu -->
+    <script type="module" src="../src/main.js"></script>
+    <!-- Podłączenie pliku JavaScript produktu jako modułu -->
+    <script type="module" src="../assets/js/product.js"></script>
+</body>
+
+</html>

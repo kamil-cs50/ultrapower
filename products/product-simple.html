@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocitas Prime - SuperMoc Nexus</title>
+    <!-- Podłączenie czcionek z Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Podłączenie głównego CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <!-- Podłączenie CSS produktu -->
+    <link rel="stylesheet" href="../assets/css/product.css">
+</head>
+
+<body>
+    <!-- Nagłówek strony -->
+    <header class="main-header glass">
+        <div class="container">
+            <!-- Logo strony z linkiem do strony głównej -->
+            <div class="logo">
+                <a href="../index.html">SuperMoc Nexus</a>
+            </div>
+            <!-- Nawigacja główna -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Strona Główna</a></li>
+                    <li><a href="product.html">Produkty</a></li>
+                    <!-- Link do koszyka z licznikiem -->
+                    <li>
+                        <a href="../cart/index.html" class="cart-link">
+                            Koszyk
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Główna treść strony -->
+    <main>
+        <div class="container">
+            <!-- Szczegóły produktu - prosty layout -->
+            <div class="product-details product-simple">
+                <!-- Galeria produktu -->
+                <div class="product-gallery fade-in">
+                    <!-- Główny obraz produktu -->
+                    <div class="main-image glass">
+                        <div class="image-container product">
+                            <img src="../assets/images/products/velocitas-prime-main.jpg" alt="Velocitas Prime">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Informacje o produkcie -->
+                <div class="product-info glass fade-in">
+                    <!-- Nagłówek produktu -->
+                    <div class="product-header">
+                        <h1>Velocitas Prime</h1>
+                        <span class="price">18 999 PLN</span>
+                    </div>
+
+                    <!-- Opis produktu -->
+                    <div class="product-description">
+                        <p>Velocitas Prime to przełomowy system przyspieszenia kwantowego, który pozwala na osiągnięcie
+                            nadzwyczajnych prędkości. Wykorzystując zaawansowaną technologię manipulacji
+                            czasoprzestrzenią, urządzenie tworzy lokalne pole przyspieszenia, umożliwiając użytkownikowi
+                            poruszanie się z prędkościami przekraczającymi ludzkie pojęcie.</p>
+
+                        <h3>Kluczowe funkcje:</h3>
+                        <ul>
+                            <li>Kwantowy rdzeń przyspieszający</li>
+                            <li>System stabilizacji temporalnej</li>
+                            <li>Adaptacyjne pole ochronne</li>
+                            <li>Zaawansowany interfejs kontroli prędkości</li>
+                            <li>System bezpieczeństwa inercyjnego</li>
+                        </ul>
+
+                        <h3>Specyfikacja techniczna:</h3>
+                        <ul>
+                            <li>Maksymalna prędkość: 500x normalna</li>
+                            <li>Czas działania: do 12 godzin</li>
+                            <li>Pobór mocy: 2.5 kW</li>
+                            <li>Waga: 3.2 kg</li>
+                            <li>Czas reakcji systemu: < 1ms</li>
+                        </ul>
+
+                        <h3>Zastosowania:</h3>
+                        <ul>
+                            <li>Ekstremalne sytuacje ratunkowe</li>
+                            <li>Zaawansowane operacje taktyczne</li>
+                            <li>Trening superszybkości</li>
+                            <li>Transport priorytetowy</li>
+                            <li>Badania nad czasoprzestrzenią</li>
+                        </ul>
+                    </div>
+
+                    <!-- Atrybuty produktu - opcje wyboru -->
+                    <div class="product-attributes">
+                        <div class="attribute glass">
+                            <label>Model</label>
+                            <select name="model">
+                                <option value="standard">Standard</option>
+                                <option value="advanced" selected>Advanced</option>
+                                <option value="elite">Elite</option>
+                            </select>
+                        </div>
+
+                        <div class="attribute glass">
+                            <label>System Bezpieczeństwa</label>
+                            <select name="safety">
+                                <option value="personal">Personalny</option>
+                                <option value="team" selected>Zespołowy</option>
+                                <option value="enterprise">Korporacyjny</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Akcje produktu - ilość i dodawanie do koszyka -->
+                    <div class="product-actions">
+                        <div class="quantity">
+                            <label>Ilość</label>
+                            <div class="quantity-controls glass">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" max="99">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+
+                        <button class="add-to-cart">Dodaj do koszyka</button>
+                    </div>
+
+                    <!-- Meta dane produktu - certyfikaty, dostawa, testowanie -->
+                    <div class="product-meta">
+                        <div class="meta-item glass">
+                            <span class="icon">🛡️</span>
+                            <span class="text">Certyfikat ISO-SPEED</span>
+                        </div>
+                        <div class="meta-item glass">
+                            <span class="icon">🚚</span>
+                            <span class="text">Ekspresowa dostawa</span>
+                        </div>
+                        <div class="meta-item glass">
+                            <span class="icon">↩️</span>
+                            <span class="text">30 dni na test</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Stopka strony -->
+    <footer id="contact" class="main-footer glass">
+        <div class="container">
+            <!-- Dane kontaktowe w stopce -->
+            <div class="footer-contact">
+                <p>Email: <a href="mailto:kontakt@ultrapower.pl">kontakt@ultrapower.pl</a></p>
+                <p>Tel: +48 123 456 789</p>
+            </div>
+            <!-- Prawa autorskie -->
+            <p>© 2025 SuperMoc Nexus. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <!-- Podłączenie głównego pliku JavaScript jako modułu -->
+    <script type="module" src="../assets/js/main.js"></script>
+    <!-- Podłączenie pliku JavaScript produktu jako modułu -->
+    <script type="module" src="../assets/js/product.js"></script>
+</body>
+
+</html>

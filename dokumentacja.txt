@@ -1,0 +1,38 @@
+Sklep oferuje zaawansowane moduły i systemy technologiczne do poprawy ludzkich możliwości.
+
+[Strona produktu – przykład: System Bio-Regeneracji]
+- Nazwa produktu: np. "System Bio-Regeneracji" (maks. 100 znaków)
+- Cena: np. "32 999 PLN"
+- Krótki opis: (maks. 200 znaków)
+- Opis produktu: (maks. 500 znaków)
+- Cechy/atrybuty produktu:
+  • Model Systemu: Standard, Advanced, Elite
+  • Tryb Regeneracji: Adaptacyjny, Ukierunkowany, Kompleksowy
+  • System Kontroli: Automatyczny, Neuralny, Hybrydowy
+- Dodatkowe specyfikacje (np. szybkość regeneracji, żywotność nanobotów itp.)
+
+[Strona koszyka]
+- Wyświetlane produkty (nazwa, cena, wybrany model/atrybuty, ilość)
+- Suma częściowa zamówienia
+- Koszty dostawy
+- Kwota końcowa (cena łączna)
+- Możliwość aktualizacji ilości produktów
+
+Towar: zaawansowane urządzenia i systemy (np. Bio-Regeneracja, Chronos Mentis, itp.) do zwiększania i optymalizacji funkcji organizmu.
+
+Użyte technologie i języki programowania w projekcie UltraPower:
+
+Języki programowania:
+- HTML: do struktury i treści stron internetowych.
+- CSS: do stylizacji i wyglądu interfejsu użytkownika (własne style).
+- JavaScript: do interaktywności, logiki biznesowej i efektów wizualnych.
+
+Biblioteki JavaScript:
+- three.js: do renderowania grafiki 3D w przeglądarce.
+- parcel-bundler: jako narzędzie do bundlingu aplikacji webowych.
+- particles.js: do tworzenia efektów cząsteczek na stronie.
+
+Narzędzia i konfiguracja:
+- npm: menadżer pakietów do zarządzania zależnościami projektu (zdefiniowanymi w package.json).
+- package.json: plik konfiguracyjny projektu, zawierający informacje o zależnościach i skryptach.
+- Parcel:  narzędzie do szybkiego budowania aplikacji internetowych, używane w skrypcie "dev" do uruchamiania serwera deweloperskiego.
