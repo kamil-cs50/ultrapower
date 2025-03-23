@@ -1,3 +1,4 @@
-./node_modules
-
+node_modules/
 .parcel-cache/
+.DS_Store
+# NIE ignorujemy katalogu dist/, ponieważ jest potrzebny dla GitHub Pages
