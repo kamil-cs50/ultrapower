@@ -102,7 +102,7 @@
         </div>
     </section>
     <!-- Canvas dla efektu cząsteczek -->
-    <canvas id="particles-canvas"></canvas>
+    <canvas id="particles-canvas" style="position: fixed; top: 0; left: 0; z-index: -1;"></canvas>
     <!-- Stopka strony -->
     <footer id="contact" class="main-footer glass">
         <div class="container">
@@ -119,7 +119,7 @@
     <!-- Podłączenie głównego pliku JavaScript jako modułu -->
     <script type="module" src="src/main.js"></script>
     <!-- Podłączenie pliku JavaScript dla efektu cząsteczek jako modułu -->
-    <script type="module" src="assets/js/particles.js"></script>
+    <script defer src="assets/js/particles.js"></script>
 </body>
 
 </html>

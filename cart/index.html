@@ -132,6 +132,16 @@
 
     <!-- Podłączenie głównego pliku JavaScript jako modułu -->
     <script type="module" src="../src/main.js"></script>
+    <!-- Podłączenie pliku JavaScript koszyka jako modułu -->
+    <script type="module">
+        import cartManager from '../assets/js/cart.js';
+        if (typeof cartManager === 'undefined') {
+            console.error('Cart manager not loaded properly');
+        } else {
+            window.app = window.app || {};
+            window.app.cartManager = cartManager;
+        }
+    </script>
 
     <!-- Szablon dla produktu w koszyku, niewidoczny na stronie -->
     <template id="cart-item-template">

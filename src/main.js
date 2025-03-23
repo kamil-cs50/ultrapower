@@ -1,11 +1,12 @@
 /**
  * Główny moduł aplikacji
  */
-import CartManager from '../assets/js/cart.js';
+import * as THREE from 'three';
+import vertexShader from '../assets/js/vertex.js';
+import fragmentShader from '../assets/js/fragment.js';
 
 class App {
     constructor() {
-        this.cartManager = null;
         this.initialize();
     }
 
@@ -233,10 +234,6 @@ class App {
         }, 3000);
     }
 }
-
-import * as THREE from 'three';
-import vertexShader from '../assets/js/vertex.js';
-import fragmentShader from '../assets/js/fragment.js';
 
 // Inicjalizacja aplikacji
 document.addEventListener('DOMContentLoaded', () => {

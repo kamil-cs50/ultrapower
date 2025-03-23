@@ -225,14 +225,14 @@ class ProductPage {
 
     // Funkcja dodająca produkt do koszyka
     addToCart(productData) {
-        // Sprawdzenie, czy obiekt aplikacji i CartManager istnieją
-        if (window.app && window.app.cartManager) {
-            if (window.app.cartManager.addToCart(productData)) {
+        import('./cart.js').then(module => {
+            const cartManager = module.default;
+            if (cartManager.addToCart(productData)) {
                 this.showNotification(); // Wyświetlenie powiadomienia o dodaniu do koszyka
             }
-        } else {
-            console.error("CartManager not available"); // Wyświetlenie błędu, jeśli CartManager nie jest dostępny
-        }
+        }).catch(error => {
+            console.error("Error loading CartManager:", error);
+        });
     }
 
     // Wyświetlenie powiadomienia o dodaniu do koszyka

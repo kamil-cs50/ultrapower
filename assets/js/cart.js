@@ -296,11 +296,14 @@ class CartManager {
     }
 }
 
-// Eksport do użycia w innych modułach
-export default CartManager;
+// Inicjalizacja CartManager jako singleton
+const cartManagerInstance = CartManager.getInstance();
 
-// Inicjalizacja po załadowaniu DOM
-document.addEventListener('DOMContentLoaded', () => {
-    window.app = window.app || {}; // Inicjalizacja przestrzeni nazw aplikacji, jeśli nie istnieje
-    window.app.cartManager = CartManager.getInstance(); // Inicjalizacja CartManager po załadowaniu strony
-});
+// Eksport instancji do użycia w innych modułach
+export default cartManagerInstance;
+
+// Upewnij się, że instancja jest dostępna globalnie
+if (typeof window !== 'undefined') {
+    window.app = window.app || {};
+    window.app.cartManager = cartManagerInstance;
+}
