@@ -43,7 +43,29 @@ Projekt jest podzielony na następujące moduły:
 - **cart/** – strona koszyka.
 
 ## Dodatkowe informacje
-Projekt został stworzony aby przedstawić moje umiejętności projektowania i wdraania interfejsów uzytkownika.
+Projekt został stworzony aby przedstawić moje umiejętności projektowania i wdrażania interfejsów użytkownika.
+
+## Wdrożenie na GitHub Pages
+Aby wdrożyć projekt na GitHub Pages:
+
+1. Zbuduj projekt:
+   ```
+   npm run build
+   ```
+   To utworzy zoptymalizowaną wersję w katalogu `dist/`.
+
+2. Na GitHub, przejdź do ustawień repozytorium (Settings), następnie do sekcji "Pages".
+
+3. W sekcji "Build and deployment":
+   - Jako "Source" wybierz "Deploy from a branch"
+   - Jako "Branch" wybierz branch główny (np. main lub master)
+   - Jako folder wybierz `/dist`
+   - Kliknij "Save"
+
+4. Po kilku minutach strona będzie dostępna pod adresem:
+   `https://<twoja-nazwa-uzytkownika>.github.io/<nazwa-repozytorium>/`
+
+WAŻNE: Po każdej zmianie w kodzie, musisz ponownie zbudować projekt (`npm run build`) i wypchnąć zmiany na GitHub.
 
 ---
 Projekt UltraPower - 2025

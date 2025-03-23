@@ -2,10 +2,11 @@
   "name": "ultrapower",
   "version": "1.0.0",
   "description": "## Struktura katalogów ``` assets/ └── images/     ├── products/      # Zdjęcia produktów     ├── categories/    # Zdjęcia kategorii     └── banners/       # Bannery i elementy główne ```",
-  "main": "src/main.js",
+  "source": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel index.html"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html products/*.html cart/index.html --public-url ./"
   },
   "keywords": [],
   "author": "",
